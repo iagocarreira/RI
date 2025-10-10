@@ -28,10 +28,10 @@ model = PPO(
     tensorboard_log=log_dir,
 )
 
-print("\n===== ENTRENANDO AGENTE PPO (entorno simple) =====")
+print("\n===== ENTRENANDO AGENTE PPO  =====")
 start = time.time()
 model.learn(total_timesteps=5000, progress_bar=True)
 print(f"\nEntrenamiento completado en {time.time()-start:.1f}s")
 
 model.save("ppo_robobo_simple_v1")
-print("✅ Modelo guardado: ppo_robobo_simple_v1.zip")
+print(" Modelo guardado: ppo_robobo_simple_v1.zip")
